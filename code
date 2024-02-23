@@ -142,3 +142,52 @@ class InstagramScreen extends StatelessWidget {
                 style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
               ),
             ),
+             IconButton(
+              icon: Icon(Icons.favorite_border),
+              onPressed: () {
+                // Add onPressed logic for heart icon
+              },
+            ),
+            IconButton(
+              icon: Icon(Icons.message),
+              onPressed: () {
+                // Add onPressed logic for message icon
+              },
+            ),
+          ],
+
+        ),
+      ),
+      bottomNavigationBar: BottomAppBar(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            IconButton(
+              icon: Icon(Icons.home),
+              onPressed: () {},
+            ),
+            IconButton(
+              icon: Icon(Icons.search),
+              onPressed: () {},
+            ),
+            IconButton(
+              icon: Icon(Icons.add_box),
+              onPressed: () {},
+            ),
+
+            IconButton(
+              icon: Icon(Icons.favorite_border),
+              onPressed: () {},
+            ),
+            CircleAvatar(
+              radius: 16,
+              backgroundImage: NetworkImage(
+                  'https://scontent.fcrk1-2.fna.fbcdn.net/v/t39.30808-6/402290531_2084796775218194_8964566483898712012_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeFQX9dYWDlHYB98ovbpUYMbfAhWABx-pfN8CFYAHH6l89g504-MmagXUaZKw4QLYZVZz4T1RhaB3rgLh7S1PKof&_nc_ohc=kFILVi5D9LMAX8lnIXV&_nc_ht=scontent.fcrk1-2.fna&oh=00_AfC3dSKJeR3t-I9cvQoRebsy6Kbje9q9eYc-g_50nt9WNw&oe=65DB2795'),
+              // Replace with your profile picture URL
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
